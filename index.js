@@ -15,6 +15,8 @@
   newTaskList.innerText = newTaskNode.value
      
   uList.appendChild(newTaskList)
+  newTaskNode.value = "";
+  
  }
 
 /* EXERCISE 6: 
@@ -34,7 +36,7 @@ const removeLast = function(){
 
 const removeFirst = function(){
   let taskListItems = document.querySelectorAll('#myTaskList li')
-  if(taskListItems.length > 0){
+  if (taskListItems.length > 0){
   taskListItems[0].remove()
   }
 }
@@ -83,3 +85,25 @@ changeTaskBackgroundColor.onchange = function (e) {
        - Break the code into many function for semplicity 
        - Reuse the functions previously created
     */
+
+function bubbleSort() {
+  const items = document.getElementsByClassName("task-list-item");
+  let swap;
+  let n = items.length -1;
+  let x = items;
+  do {
+    swap = false;
+    for(let i=0; i< n; i++){
+      if (x[i].innerText > x [i + 1].innerText){
+        let temp = x[i].innerText;
+        x[i].innerText = x [i + 1].innerText;
+        x [1 + 1].innerText = temp;
+        swap = true;
+      }
+    }
+    n--;
+  } while (swap);
+  for (let i=0; i< items.length; i++){
+    items[i].innerText = x[i].innerText;
+}
+}

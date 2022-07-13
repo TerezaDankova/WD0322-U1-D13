@@ -23,22 +23,22 @@ The user should be able to see the list of tasks, add new ones, delete existing 
     <br/>
     <span>You can add any task you like by writing it in the specified field and then press "Add new task"</span><br/><br/>
 
-    <input type="text" id="newTask" />
-    <input class= "button" type="button" value="Add new Task" onclick="addNewTask()"/>
-    <input class= "button" type="button" value="Remove Last Task" onclick="removeLast()"/>
-    <input class= "button" type="button" value="Remove First Task" onclick="removeFirst()"/>
+      <input type="text" id="newTask" style="height: 20px;width: 200px"/>
+      <input class= "button" type="button" value="Add new Task" onclick="addNewTask()"/>
+      <input class= "button" type="button" value="Remove Last Task" onclick="removeLast()"/>
+      <input class= "button" type="button" value="Remove First Task" onclick="removeFirst()"/>
 
-    <ul id="myTaskList"></ul>
+      <ul id="myTaskList"></ul>
 
-    <hr/>
+      <hr/>
 
-    <input type="color" placeholder="Color" id="colorPicker"/>
-    <input class= "button" type="button" value="Change task background" onclick="changeTaskBackgroundColor()"/>
+      <input type="color" placeholder="Color" id="colorPicker"/>
+      <input class= "button" type="button" value="Change color background" onclick="changeTaskBackgroundColor()"/>
 
-    <hr/>
+       <hr/>
 
-    <input class= "button" type="button" value="Sort" onclick="bubblesort()"/>
-
+       <input class= "button" type="button" value="Sort" onclick="bubblesort()"/>
+  
     <script src="./index.js"></script>
   </body>
 </html>
