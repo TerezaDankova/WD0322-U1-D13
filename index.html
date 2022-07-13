@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+
+ASSIGNMENT TOPIC
+You are building a task list website.
+The user should be able to see the list of tasks, add new ones, delete existing ones or sort them all alphabetically.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>Welcome to your personal Task List!</h1>
+    <br/>
+    <span>You can add any task you like by writing it in the specified field and then press "Add new task"</span><br/><br/>
+
+    <input type="text" id="newTask" />
+    <input class= "button" type="button" value="Add new Task" onclick="addNewTask()"/>
+    <input class= "button" type="button" value="Remove Last Task" onclick="removeLast()"/>
+    <input class= "button" type="button" value="Remove First Task" onclick="removeFirst()"/>
+
+    <ul id="myTaskList"></ul>
+
+    <hr/>
+
+    <input type="color" placeholder="Color" id="colorPicker"/>
+    <input class= "button" type="button" value="Change task background" onclick="changeTaskBackgroundColor()"/>
+
+    <hr/>
+
+    <input class= "button" type="button" value="Sort" onclick="bubblesort()"/>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
